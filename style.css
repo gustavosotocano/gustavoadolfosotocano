@@ -180,7 +180,7 @@ footer {
    Publications Link Styling
    ========================================================================== */
 #publications a {
-    color: white;
+    color: white !important;
     text-decoration: none;
     transition: color 0.2s ease;
 }
