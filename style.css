@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Estilos Globales y Variables (Tema Oscuro)
+   ========================================================================== */
+:root {
+    --bg-principal: #0f172a;       /* Fondo oscuro profundo */
+    --bg-secundario: #1e293b;     /* Fondo de tarjetas y secciones */
+    --texto-principal: #f8fafc;   /* Blanco suave para lectura */
+    --texto-mutado: #94a3b8;      /* Gris claro para detalles y fechas */
+    --color-acento: #38bdf8;      /* Azul brillante para enlaces y destacados */
+    --color-borde: #334155;       /* Bordes sutiles */
+    --fuente: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    font-family: var(--fuente);
+    line-height: 1.6;
+    padding-bottom: 60px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   Encabezado (Header)
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+    border-bottom: 1px solid var(--color-borde);
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: var(--color-acento);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: var(--texto-mutado);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    color: var(--texto-principal);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: var(--texto-principal);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: var(--color-acento);
+}
+
+.social-links a {
+    background-color: var(--bg-secundario);
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    color: var(--texto-principal);
+    display: inline-block;
+    font-size: 0.85rem;
+    margin: 0 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--color-acento);
+    color: var(--bg-principal);
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Secciones de Contenido (Main Content)
+   ========================================================================== */
+.content {
+    margin-top: 40px;
+}
+
+section {
+    background-color: var(--bg-secundario);
+    border: 1px solid var(--color-borde);
+    border-radius: 12px;
+    margin-bottom: 25px;
+    padding: 30px;
+}
+
+section h3 {
+    border-bottom: 2px solid var(--color-borde);
+    color: var(--color-acento);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+
+/* Listas estandarizadas */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Viñetas personalizadas azules */
+ul li::before {
+    content: "▹";
+    color: var(--color-acento);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* ==========================================================================
+   Bloques de Experiencia Laboral (Jobs)
+   ========================================================================== */
+.job {
+    border-bottom: 1px solid var(--color-borde);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.job:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.job h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.job-meta {
+    color: var(--texto-mutado);
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+/* ==========================================================================
+   Pie de Página (Footer)
+   ========================================================================== */
+footer {
+    border-top: 1px solid var(--color-borde);
+    color: var(--texto-mutado);
+    font-size: 0.85rem;
+    margin-top: 50px;
+    padding: 25px 0;
+    text-align: center;
+}
+
