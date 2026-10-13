@@ -176,3 +176,16 @@ footer {
     text-align: center;
 }
 
+/* ==========================================================================
+   Publications Link Styling
+   ========================================================================== */
+#publications a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#publications a:hover {
+    text-decoration: underline;
+    color: #7dd3fc; /* Un tono de azul un poco más claro al pasar el mouse */
+}
