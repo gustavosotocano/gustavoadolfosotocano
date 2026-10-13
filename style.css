@@ -180,12 +180,12 @@ footer {
    Publications Link Styling
    ========================================================================== */
 #publications a {
-    color: var(--color-accent);
+    color: white;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 #publications a:hover {
     text-decoration: underline;
-    color: #edf0f2; /* Un tono de azul un poco más claro al pasar el mouse */
+    color: #7dd3fc; /* Un tono de azul un poco más claro al pasar el mouse */
 }
